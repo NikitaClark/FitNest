@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name"> </string>
+
+    <string name="fitness_level_prompt">Your Fitness Level</string>
+    <string name="fitness_goal_prompt">Fitness Goal</string>
+    <string name="workout_availability_prompt">Current Fitness Level</string>
+    <string name="gym_equipment_accessibility_prompt">Gym Equipment Accessibility</string>
+    <string name="physical_disabilities_prompt">Do you have any medical conditions that may affect your workout?</string>
+    <string name="nutrition_prompt">Do you have any dietary restrictions?</string>
+    <string name="time_commitment_prompt">How many hours can you commit per week?</string>
+    <string name="mySpinnerHint">Select an option</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="FitnessLevel">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="TimeWillingToCommitAWeek">
+        <item>1 day</item>
+        <item>2 day</item>
+        <item>3 day</item>
+        <item>4 day</item>
+        <item>5 day</item>
+    </string-array>
+
+    <string-array name="GymGoal">
+    <item>Weigh Loss</item>
+    <item>Weigh Gain</item>
+    <item>General Health</item>
+    <item>Competition</item>
+    <item>Strength Training</item>
+</string-array>
+
+    <string-array name="AccessToGymEquipment">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="yes_no_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+</resources>
