@@ -9,15 +9,17 @@
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="30dp"
         android:text="Welcome! Let's customize FitnesT for your goals."
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/continueButton"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:text="Continue"
         android:textColor="@color/white"
@@ -34,8 +36,9 @@
         android:text="OR"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:layout_below="@id/continueButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="20dp" />
 
     <Button
         android:id="@+id/continueWithGoogleButton"
@@ -44,7 +47,7 @@
         android:text="Continue with Google"
         android:textColor="@color/white"
         android:background="@drawable/rounded_button"
-        android:layout_below="@id/continueButton"
+        android:layout_below="@id/or"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
 
