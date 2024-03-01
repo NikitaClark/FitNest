@@ -10,16 +10,101 @@
     <string name="time_commitment_prompt">How many hours can you commit per week?</string>
     <string name="mySpinnerHint">Select an option</string>
 
-    <string-array name="gender">
-        <item>Male</item>
-        <item>Female</item>
+    <string-array name="heights_in_feet">
+        <item>4\'0"</item>
+        <item>4\'1"</item>
+        <item>4\'2"</item>
+        <item>4\'3"</item>
+        <item>4\'4"</item>
+        <item>4\'5"</item>
+        <item>4\'6"</item>
+        <item>4\'7"</item>
+        <item>4\'8"</item>
+        <item>4\'9"</item>
+        <item>4\'10"</item>
+        <item>4\'11"</item>
+        <item>5\'0"</item>
+        <item>5\'1"</item>
+        <item>5\'2"</item>
+        <item>5\'3"</item>
+        <item>5\'4"</item>
+        <item>5\'5"</item>
+        <item>5\'6"</item>
+        <item>5\'7"</item>
+        <item>5\'8"</item>
+        <item>5\'9"</item>
+        <item>5\'10"</item>
+        <item>5\'11"</item>
+        <item>6\'0"</item>
+        <item>6\'1"</item>
+        <item>6\'2"</item>
+        <item>6\'3"</item>
+        <item>6\'4"</item>
+        <item>6\'5"</item>
+        <item>6\'6"</item>
+        <item>6\'7"</item>
+        <item>6\'8"</item>
+        <item>6\'9"</item>
+        <item>6\'10"</item>
+        <item>6\'11"</item>
+        <item>7\'0"</item>
     </string-array>
 
-    <string-array name="FitnessLevel">
-        <item>Beginner</item>
-        <item>Intermediate</item>
-        <item>Advanced</item>
+
+    <string-array name="weights_in_lbs">
+        <item>50 lbs</item>
+        <item>55 lbs</item>
+        <item>60 lbs</item>
+        <item>65 lbs</item>
+        <item>70 lbs</item>
+        <item>75 lbs</item>
+        <item>80 lbs</item>
+        <item>85 lbs</item>
+        <item>90 lbs</item>
+        <item>95 lbs</item>
+        <item>100 lbs</item>
+        <item>105 lbs</item>
+        <item>110 lbs</item>
+        <item>115 lbs</item>
+        <item>120 lbs</item>
+        <item>125 lbs</item>
+        <item>130 lbs</item>
+        <item>135 lbs</item>
+        <item>140 lbs</item>
+        <item>145 lbs</item>
+        <item>150 lbs</item>
+        <item>155 lbs</item>
+        <item>160 lbs</item>
+        <item>165 lbs</item>
+        <item>170 lbs</item>
+        <item>175 lbs</item>
+        <item>180 lbs</item>
+        <item>185 lbs</item>
+        <item>190 lbs</item>
+        <item>195 lbs</item>
+        <item>200 lbs</item>
+        <item>205 lbs</item>
+        <item>210 lbs</item>
+        <item>215 lbs</item>
+        <item>220 lbs</item>
+        <item>225 lbs</item>
+        <item>230 lbs</item>
+        <item>235 lbs</item>
+        <item>240 lbs</item>
+        <item>245 lbs</item>
+        <item>250 lbs</item>
+        <item>255 lbs</item>
+        <item>260 lbs</item>
+        <item>265 lbs</item>
+        <item>270 lbs</item>
+        <item>275 lbs</item>
+        <item>280 lbs</item>
+        <item>285 lbs</item>
+        <item>290 lbs</item>
+        <item>295 lbs</item>
+        <item>300 lbs</item>
     </string-array>
+
 
     <string-array name="TimeWillingToCommitAWeek">
         <item>1 day</item>

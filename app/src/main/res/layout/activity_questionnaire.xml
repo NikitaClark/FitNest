@@ -23,10 +23,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Select up to 3 that are important to you, including one weight goal."
+            android:text="Select 1 that is important to you"
             android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="32dp"/>
+            android:textColor="#FFFFFF"/>
+
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -34,34 +34,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:progressDrawable="@drawable/progress_bar_drawable"
-            android:max="10"
+            android:max="7"
             android:paddingBottom="20dp"
-            android:progress="0"
+            android:progress="1"
             android:layout_marginTop="20dp" />
+
 
         <Button
             android:id="@+id/btnLoseWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lose Weight"
-            android:backgroundTint="#37474F"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp"/>
-
-        <Button
-            android:id="@+id/btnMaintainWeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Maintain Weight"
-            android:backgroundTint="#37474F"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp"/>
-
-        <Button
-            android:id="@+id/btnGainWeight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gain Weight"
             android:backgroundTint="#37474F"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="16dp"/>
@@ -76,39 +59,21 @@
             android:layout_marginBottom="16dp"/>
 
         <Button
-            android:id="@+id/btnModifyDiet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Modify My Diet"
-            android:backgroundTint="#37474F"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp"/>
-
-        <Button
-            android:id="@+id/btnManageStress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Manage Stress"
-            android:backgroundTint="#37474F"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="16dp"/>
-
-        <Button
-            android:id="@+id/btnIncreaseStepCount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Increase My Step Count"
-            android:backgroundTint="#37474F"
-            android:textColor="#FFFFFF"
-            android:layout_marginBottom="32dp"/>
-
-        <Button
             android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Next"
             android:backgroundTint="#0D47A1"
             android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnNavigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Next Page"
+            android:visibility="gone" />
+
+
 
     </LinearLayout>
 </ScrollView>

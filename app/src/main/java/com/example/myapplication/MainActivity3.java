@@ -10,12 +10,14 @@ package com.example.myapplication;
         import android.widget.Spinner;
         import android.widget.TextView;
 
+        import androidx.appcompat.app.AppCompatActivity;
+
         import com.example.myapplication.Exercise;
 
         import java.util.ArrayList;
         import java.util.List;
 
-public class MainActivity3 extends Activity {
+public class MainActivity3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

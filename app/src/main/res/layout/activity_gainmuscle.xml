@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How old are you?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:background="@drawable/edit_text_outline"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where do you live?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:background="@drawable/edit_text_outline"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zip Code"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:background="@drawable/edit_text_outline"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How tall are you?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much do you weigh?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown"/>
+
+
+    <Button
+        android:id="@+id/btnLoseWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lose Weight"
+        android:backgroundTint="#37474F"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnMaintainWeight"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Maintain Weight"-->
+    <!--            android:backgroundTint="#37474F"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:layout_marginBottom="16dp"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnGainWeight"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Gain Weight"-->
+    <!--            android:backgroundTint="#37474F"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:layout_marginBottom="16dp"/>-->
+
+    <Button
+        android:id="@+id/btnGainMuscle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gain Muscle"
+        android:backgroundTint="#37474F"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnModifyDiet"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Modify My Diet"-->
+    <!--            android:backgroundTint="#37474F"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:layout_marginBottom="16dp"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnManageStress"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Manage Stress"-->
+    <!--            android:backgroundTint="#37474F"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:layout_marginBottom="16dp"/>-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnIncreaseStepCount"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Increase My Step Count"-->
+    <!--            android:backgroundTint="#37474F"-->
+    <!--            android:textColor="#FFFFFF"-->
+    <!--            android:layout_marginBottom="32dp"/>-->
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Next Page"
+        android:visibility="gone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

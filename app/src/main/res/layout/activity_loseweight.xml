@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lose Weight Goal"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/progress_bar_drawable"
+        android:max="7"
+        android:paddingBottom="20dp"
+        android:progress="2"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/buttonLackOfTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lack of time" />
+
+    <Button
+        android:id="@+id/buttonHardRegimen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The regimen was hard to follow" />
+
+    <Button
+        android:id="@+id/buttonLackVariety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Healthy diets lack variety" />
+    <Button
+        android:id="@+id/buttonStressFoodChoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stress around food choices" />
+
+    <Button
+        android:id="@+id/buttonHolidaysEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Holidays/Vacation/Social Events" />
+
+    <Button
+        android:id="@+id/buttonFoodCravings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food cravings" />
+
+    <Button
+        android:id="@+id/buttonLackOfProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lack of progress" />
+
+    <Button
+        android:id="@+id/buttonTasteGood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Healthy food doesn't taste good" />
+
+    <Button
+        android:id="@+id/buttonTooExpensive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Healthy food is too expensive" />
+
+    <Button
+        android:id="@+id/buttonHardToCook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cooking was too hard or time-consuming" />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How old are you?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information Text"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:background="@drawable/edit_text_outline"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where do you live?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:background="@drawable/edit_text_outline"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zip Code"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:background="@drawable/edit_text_outline"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How tall are you?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much do you weigh?"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dropdown"/>
+
+
+
+
+
+
+
+    <!-- Add more UI components here as needed -->
+
+</LinearLayout>
