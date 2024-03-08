@@ -32,6 +32,8 @@
         android:layout_height="wrap_content"
         android:text="Lack of time" />
 
+
+
     <Button
         android:id="@+id/buttonHardRegimen"
         android:layout_width="match_parent"
@@ -67,32 +69,10 @@
         android:layout_height="wrap_content"
         android:text="Lack of progress" />
 
-    <Button
-        android:id="@+id/buttonTasteGood"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Healthy food doesn't taste good" />
-
-    <Button
-        android:id="@+id/buttonTooExpensive"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Healthy food is too expensive" />
-
-    <Button
-        android:id="@+id/buttonHardToCook"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cooking was too hard or time-consuming" />
 
 
-    <Button
-        android:id="@+id/btnNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:backgroundTint="#0D47A1"
-        android:textColor="#FFFFFF"/>
+
+
 
     <TextView
         android:id="@+id/ageText"
@@ -175,8 +155,10 @@
         android:id="@+id/spinnerHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
         android:background="@drawable/spinner_background"
-        android:spinnerMode="dropdown"/>
+    android:popupBackground="#000000" />
+
 
     <TextView
         android:id="@+id/weightText"
@@ -192,9 +174,138 @@
         android:id="@+id/spinnerWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
         android:background="@drawable/spinner_background"
-        android:spinnerMode="dropdown"/>
+        android:popupBackground="#000000" />
 
+    <Button
+        android:id="@+id/buttonNotVeryActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Very Active" />
+
+    <Button
+        android:id="@+id/buttonLightlyActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lightly Active" />
+
+    <Button
+        android:id="@+id/buttonActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active" />
+
+    <Button
+        android:id="@+id/buttonVeryActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Very Active" />
+
+    <TextView
+        android:id="@+id/textViewGoalWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your goal weight?"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <Spinner
+        android:id="@+id/spinnerWeightGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="#000000" />
+
+
+    <TextView
+        android:id="@+id/textViewWeeklyGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your weekly goal?"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp" />
+
+
+    <Button
+        android:id="@+id/buttonLoseHalfPound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lose 0.5 lbs per week"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonLose1Pound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lose 1 lbs per week"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonLose1HalfPound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lose 1.5 lbs per week"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonLose2Pound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lose 2 lbs per week"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:textColorHint="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="#0D47A1"
+
+        android:textColor="#FFFFFF"/>
 
 
 

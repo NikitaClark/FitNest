@@ -12,7 +12,7 @@
         android:layout_marginTop="100dp"
         android:paddingTop="80dp"
         android:paddingBottom="30dp"
-        android:text="Welcome! Let's customize FitnesT for your goals."
+        android:text="Welcome! Let's customize Fitnest for your goals."
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp" />
