@@ -28,6 +28,7 @@
         <activity android:name=".LogIn" />
         <activity android:name=".LoseWeight" />
         <activity android:name=".GainMuscle" />
+        <activity android:name=".DashBoard" />
 
 
 

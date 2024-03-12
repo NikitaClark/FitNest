@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -180,6 +181,14 @@ public class GainMuscle extends AppCompatActivity {
                 findViewById(R.id.emailEditText).setVisibility(View.VISIBLE);
                 findViewById(R.id.passwordEditText).setVisibility(View.VISIBLE);
                 findViewById(R.id.loginButton).setVisibility(View.VISIBLE);
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(GainMuscle.this, DashBoard.class);
+                        startActivity(intent);
+                    }
+                });
 
 
 

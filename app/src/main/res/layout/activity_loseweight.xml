@@ -303,7 +303,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:backgroundTint="#0D47A1"
+        android:backgroundTint="@color/deep_orange"
 
         android:textColor="#FFFFFF"/>
 

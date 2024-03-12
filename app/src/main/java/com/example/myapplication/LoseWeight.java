@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -209,11 +210,13 @@ public class LoseWeight extends AppCompatActivity {
                 findViewById(R.id.loginButton).setVisibility(View.VISIBLE);
 
 
-
-
-
-
-
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(LoseWeight.this, DashBoard.class);
+                        startActivity(intent);
+                    }
+                });
 
 
                 break;
