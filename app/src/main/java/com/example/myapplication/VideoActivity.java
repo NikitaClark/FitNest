@@ -33,9 +33,6 @@ public class VideoActivity extends Activity {
             case R.id.exercise3_video:
                 videoId = intent.getStringExtra("videoId3");
                 break;
-            case R.id.exercise4_video:
-                videoId = intent.getStringExtra("videoId4");
-                break;
             default:
                 // Handle invalid button ID
                 return;

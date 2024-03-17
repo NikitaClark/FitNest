@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +17,7 @@ public class DashBoard extends AppCompatActivity {
     private TextView name;
     private Button joinHaloInsiderButton;
     private TextView signInLabel;
+    private Button workout_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +27,16 @@ public class DashBoard extends AppCompatActivity {
         // Initialize elements
         headerProfile = findViewById(R.id.header_profile);
         avatarImage = findViewById(R.id.avatar_image);
-
-        joinHaloInsiderButton = findViewById(R.id.workout_button);
-
+        workout_button = findViewById(R.id.workout_button);
+        joinHaloInsiderButton = findViewById(R.id.workout_button); // This line is redundant. You're already initializing workout_button above.
         name = findViewById(R.id.name);
 
-        // Set up listeners or any other initializations
+        workout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashBoard.this, MainActivity3.class);
+                startActivity(intent);
+            }
+        });
     }
 }

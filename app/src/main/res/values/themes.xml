@@ -4,13 +4,8 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/deep_orange</item>
         <item name="colorPrimaryVariant">@color/deep_orange</item>
-        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/deep_orange</item>
-        <item name="colorSecondaryVariant">@color/deep_orange</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="1">@color/black</item>
-        <!-- Customize your theme here. -->
+
     </style>
 </resources>

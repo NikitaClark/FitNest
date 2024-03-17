@@ -3,10 +3,8 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#FFA500</color>
     <color name="dark_brown">#171717</color>
     <color name="light_brown">#303030</color>
-    <color name="yourDesiredColor">#FFA500</color>
     <color name="deep_orange">#CC6600</color>
 
 

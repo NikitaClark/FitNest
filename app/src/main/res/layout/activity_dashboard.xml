@@ -43,40 +43,32 @@
     <!-- Button: Workout -->
     <Button
         android:id="@+id/workout_button"
-        style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Workout"
+        android:textSize="10dp"
+        android:backgroundTint="#303030"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/ai_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="8dp"/>
-
-    <!-- Button: AI -->
-    <Button
-        android:id="@+id/ai_button"
-        style="@style/ButtonStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="AI"
-        app:layout_constraintStart_toEndOf="@id/workout_button"
         app:layout_constraintEnd_toStartOf="@id/nutrition_button"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="4dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"/>
+         android:layout_marginBottom="25dp"/>
 
     <!-- Button: Nutrition -->
     <Button
         android:id="@+id/nutrition_button"
-        style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textSize="10dp"
         android:text="Nutrition"
-        app:layout_constraintStart_toEndOf="@id/ai_button"
+        android:backgroundTint="#303030"
+        app:layout_constraintStart_toEndOf="@id/workout_button"
         app:layout_constraintEnd_toStartOf="@id/habit_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"/>
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="25dp"/>
 
     <!-- Button: Habit Tracking -->
     <Button
@@ -85,13 +77,13 @@
         android:layout_height="wrap_content"
         android:text="Habit Tracking"
         android:textColor="@color/white"
-        android:background="@drawable/rounded_button"
+        android:textSize="10dp"
+        android:backgroundTint="#303030"
         app:layout_constraintStart_toEndOf="@id/nutrition_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="8dp"/>
-
-
-
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+    android:layout_marginBottom="25dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

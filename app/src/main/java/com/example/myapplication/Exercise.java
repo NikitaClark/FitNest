@@ -1,11 +1,10 @@
 package com.example.myapplication;
 
-import java.util.ArrayList;
-import java.util.List;
+
+
 
 public class Exercise {
     private String name;
-
 
     private String videoId;
 
@@ -16,6 +15,8 @@ public class Exercise {
         this.goalResult = goalResult;
         this.videoId = videoUrl;
     }
+
+
 
     public String getName() {
         return name;
@@ -31,6 +32,3 @@ public class Exercise {
 }
 
 
-/*
-
- */

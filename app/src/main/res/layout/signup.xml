@@ -62,4 +62,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
 
+    <Button
+        android:id="@+id/continueWithInstagramButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Continue with Instagram"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/continueWithFacebookButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
 </RelativeLayout>

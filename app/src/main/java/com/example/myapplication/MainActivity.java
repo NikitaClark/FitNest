@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+       
         // Find the VideoView element in the layout file
         videoView = findViewById(R.id.videoView);
         // Set the media controller for the video view
