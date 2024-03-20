@@ -24,6 +24,7 @@ public class DashBoard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+      
         // Initialize elements
         headerProfile = findViewById(R.id.header_profile);
         avatarImage = findViewById(R.id.avatar_image);

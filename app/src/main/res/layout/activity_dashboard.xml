@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"> <!-- Assuming black background -->
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="#000000">
+        <!-- Name Text -->
 
-    <!-- Header for profile -->
+
     <TextView
         android:id="@+id/header_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MY PROFILE"
         style="@style/HeaderStyle"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="80dp"
+        android:text="My Goal"
+        android:textColor="@color/deep_orange"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Name Text -->
+    <TextView
+        android:id="@+id/goal"
+        style="@style/HeaderStyle"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:text="My FitNest"
+        android:textColor="@color/deep_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="339dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:max="7"
+        android:paddingBottom="20dp"
+        android:progress="2"
+        android:progressDrawable="@drawable/progress_bar_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_profile" />
+
     <TextView
         android:id="@+id/name"
         style="@style/HeaderStyle"
@@ -30,17 +64,34 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Avatar Image -->
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/avatar_image"
         android:layout_width="144dp"
         android:layout_height="144dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/nestorpic"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
         app:layout_constraintTop_toBottomOf="@id/name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"/>
+
 
     <!-- Button: Workout -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recepi_image"
+        android:layout_width="287dp"
+        android:layout_height="157dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="112dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/recepi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_image" />
+
     <Button
         android:id="@+id/workout_button"
         android:layout_width="0dp"
