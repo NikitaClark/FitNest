@@ -10,31 +10,35 @@
         <!-- Name Text -->
 
 
-    <TextView
-        android:id="@+id/header_profile"
-        style="@style/HeaderStyle"
-        android:layout_width="150dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="80dp"
-        android:text="My Goal"
-        android:textColor="@color/deep_orange"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/goal"
         style="@style/HeaderStyle"
         android:layout_width="146dp"
         android:layout_height="36dp"
-        android:text="My FitNest"
+        android:text="My Profile"
+        android:textAlignment="center"
         android:textColor="@color/deep_orange"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/header_profile"
+        style="@style/HeaderStyle"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="64dp"
+        android:text="My Goal"
+        android:textAlignment="center"
+        android:textColor="@color/deep_orange"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -42,7 +46,7 @@
         android:layout_width="339dp"
         android:layout_height="37dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:max="7"
         android:paddingBottom="20dp"
         android:progress="2"
@@ -52,30 +56,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/header_profile" />
 
+    <!-- Avatar Image -->
     <TextView
         android:id="@+id/name"
         style="@style/HeaderStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="76dp"
         android:text="Nestor Limas"
-        app:layout_constraintTop_toBottomOf="@id/header_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/header_profile" />
 
-    <!-- Avatar Image -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/avatar_image"
         android:layout_width="144dp"
         android:layout_height="144dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/nestorpic"
-        app:shapeAppearanceOverlay="@style/roundedImageView"
-        app:layout_constraintTop_toBottomOf="@id/name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_centerInParent="true"
-        android:scaleType="centerCrop"/>
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nestorpic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
 
 
     <!-- Button: Workout -->

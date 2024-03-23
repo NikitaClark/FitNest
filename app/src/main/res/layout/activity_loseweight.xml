@@ -22,9 +22,35 @@ android:background="#000000">
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/barriers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lose Weight Goal"
+            android:text="In the past, what have been your barriers to losing weight?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/baseline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your baseline activity level?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almost done! Create your account."
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/PI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Info"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <ProgressBar
