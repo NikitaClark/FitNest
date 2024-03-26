@@ -1,11 +1,14 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,16 +16,23 @@ public class DashBoard extends AppCompatActivity {
 
     private TextView headerProfile;
     private ImageView avatarImage;
-    private TextView signedInText;
     private TextView name;
     private Button joinHaloInsiderButton;
-    private TextView signInLabel;
+    private VideoView videoView;
     private Button workout_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+
+
+        videoView = findViewById(R.id.videoView);
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.logo);
 
       
         // Initialize elements
@@ -37,6 +47,15 @@ public class DashBoard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DashBoard.this, MainActivity3.class);
                 startActivity(intent);
+            }
+        });
+
+        videoView.start();
+        // Loop the video
+        videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                videoView.start();
             }
         });
     }

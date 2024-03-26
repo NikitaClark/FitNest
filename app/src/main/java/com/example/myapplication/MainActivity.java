@@ -21,13 +21,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
        
-        // Find the VideoView element in the layout file
+
         videoView = findViewById(R.id.videoView);
-        // Set the media controller for the video view
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
-        // Set up the video source
         videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.logo);
 
         Button signUpButton = findViewById(R.id.sign_up_button);
