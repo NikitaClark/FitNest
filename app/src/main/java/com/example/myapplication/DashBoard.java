@@ -29,26 +29,26 @@ public class DashBoard extends AppCompatActivity {
 
 
         videoView = findViewById(R.id.videoView);
-        MediaController mediaController = new MediaController(this);
-        mediaController.setAnchorView(videoView);
-        videoView.setMediaController(mediaController);
-        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.logo);
-
-      
-        // Initialize elements
-        headerProfile = findViewById(R.id.header_profile);
-        avatarImage = findViewById(R.id.avatar_image);
-        workout_button = findViewById(R.id.workout_button);
-        joinHaloInsiderButton = findViewById(R.id.workout_button); // This line is redundant. You're already initializing workout_button above.
-        name = findViewById(R.id.name);
-
-        workout_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DashBoard.this, MainActivity3.class);
-                startActivity(intent);
-            }
-        });
+//        MediaController mediaController = new MediaController(this);
+//        mediaController.setAnchorView(videoView);
+//        videoView.setMediaController(mediaController);
+//        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.logo);
+//
+//
+//        // Initialize elements
+//        headerProfile = findViewById(R.id.header_profile);
+//        avatarImage = findViewById(R.id.avatar_image);
+//        workout_button = findViewById(R.id.workout_button);
+//        joinHaloInsiderButton = findViewById(R.id.workout_button); // This line is redundant. You're already initializing workout_button above.
+//        name = findViewById(R.id.name);
+//
+//        workout_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(DashBoard.this, MainActivity3.class);
+//                startActivity(intent);
+//            }
+//        });
 
         videoView.start();
         // Loop the video

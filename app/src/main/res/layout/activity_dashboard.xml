@@ -110,75 +110,176 @@
     </ViewFlipper>
 
 
-    <Button
+    <LinearLayout
         android:id="@+id/workout_button"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/buttondesign"
         android:backgroundTint="#303030"
-        android:text="Workout"
-        android:textColor="@color/white"
-        android:textSize="7dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/nutrition_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.175" />
+        app:layout_constraintWidth_percent="0.175"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onWorkoutButtonClick">
 
-    <Button
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_workout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Workout"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
         android:id="@+id/nutrition_button"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/buttondesign"
         android:backgroundTint="#303030"
-        android:text="Nutrition"
-        android:textColor="@color/white"
-        android:textSize="6.6dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ai_trainer_button"
         app:layout_constraintStart_toEndOf="@id/workout_button"
-        app:layout_constraintWidth_percent="0.175" />
+        app:layout_constraintWidth_percent="0.175"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onNutritionButtonClick">
 
-    <Button
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_nutrition" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Nutrition"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
         android:id="@+id/ai_trainer_button"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/buttondesign"
         android:backgroundTint="#303030"
-        android:text="AI Trainer"
-        android:textColor="@color/white"
-        android:textSize="8dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/habit_tracking_button"
         app:layout_constraintStart_toEndOf="@id/nutrition_button"
-        app:layout_constraintWidth_percent="0.25" />
+        app:layout_constraintWidth_percent="0.25">
 
-    <Button
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/quantum_ic_play_arrow_white_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="AI Trainer"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:id="@+id/habit_tracking_button"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/buttondesign"
         android:backgroundTint="#303030"
-        android:text="Habit Tracking"
-        android:textColor="@color/white"
-        android:textSize="7dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/settings_button"
         app:layout_constraintStart_toEndOf="@id/ai_trainer_button"
-        app:layout_constraintWidth_percent="0.175" />
+        app:layout_constraintWidth_percent="0.175">
 
-    <Button
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_stat_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Habit Tracking"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:id="@+id/settings_button"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/buttondesign"
         android:backgroundTint="#303030"
-        android:text="Settings"
-        android:textColor="@color/white"
-        android:textSize="7dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/habit_tracking_button"
-        app:layout_constraintWidth_percent="0.175" />
+        app:layout_constraintWidth_percent="0.175">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
 
 
