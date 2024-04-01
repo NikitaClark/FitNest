@@ -103,6 +103,10 @@ public class GainMuscle extends AppCompatActivity {
                 findViewById(R.id.buttonActive).setVisibility(View.GONE);
                 findViewById(R.id.buttonVeryActive).setVisibility(View.GONE);
 
+                findViewById(R.id.baseline).setVisibility(View.GONE);
+                findViewById(R.id.account).setVisibility(View.GONE);
+                findViewById(R.id.PI).setVisibility(View.GONE);
+
                 ageText.setVisibility(View.GONE);
                 countryText.setVisibility(View.GONE);
                 heightText.setVisibility(View.GONE);
@@ -125,6 +129,9 @@ public class GainMuscle extends AppCompatActivity {
                 findViewById(R.id.buttonActive).setVisibility(View.VISIBLE);
                 findViewById(R.id.buttonVeryActive).setVisibility(View.VISIBLE);
 
+                findViewById(R.id.barriers).setVisibility(View.GONE);
+                findViewById(R.id.baseline).setVisibility(View.VISIBLE);
+
                 break;
             case 3:
                 findViewById(R.id.buttonNotVeryActive).setVisibility(View.GONE);
@@ -142,6 +149,9 @@ public class GainMuscle extends AppCompatActivity {
                 editZipCode.setVisibility(View.VISIBLE);
                 spinnerHeight.setVisibility(View.GONE);
                 spinnerWeight.setVisibility(View.GONE);
+
+                findViewById(R.id.baseline).setVisibility(View.GONE);
+                findViewById(R.id.PI).setVisibility(View.VISIBLE);
 
                 break;
             case 4:
@@ -176,6 +186,9 @@ public class GainMuscle extends AppCompatActivity {
                 findViewById(R.id.spinnerWeightGoal).setVisibility(View.GONE);
                 findViewById(R.id.textViewWeeklyGoal).setVisibility(View.GONE);
                 findViewById(R.id.buttonLoseHalfPound).setVisibility(View.GONE);
+
+                findViewById(R.id.PI).setVisibility(View.GONE);
+                findViewById(R.id.account).setVisibility(View.VISIBLE);
 
 
                 findViewById(R.id.emailEditText).setVisibility(View.VISIBLE);
