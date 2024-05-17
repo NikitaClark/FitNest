@@ -11,8 +11,8 @@
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="323dp"
-        android:layout_height="85dp"
+        android:layout_width="287dp"
+        android:layout_height="87dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,8 +37,8 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="339dp"
-        android:layout_height="37dp"
+        android:layout_width="291dp"
+        android:layout_height="38dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:max="7"
@@ -294,5 +294,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="64dp"
         app:layout_constraintStart_toEndOf="@id/nutrition_button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="54dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTintMode="multiply"
+        android:text="Bell"
+        app:icon="@android:drawable/ic_popup_reminder"
+        app:iconTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
