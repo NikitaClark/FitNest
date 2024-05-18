@@ -30,9 +30,9 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="One day  full body"
+            android:text="One:   DAY    full body"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -59,7 +59,7 @@
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="15 times"
+                android:text="3 ex 12"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -85,7 +85,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Run"
+                android:text="Back exercise"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -135,7 +135,7 @@
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="30 times"
+                android:text="3 ex 12"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
