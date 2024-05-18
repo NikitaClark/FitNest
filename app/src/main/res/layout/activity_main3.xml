@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
@@ -8,113 +9,147 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/AnalyzeResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Analyze Result"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:paddingTop="14dp"
-            android:paddingBottom="35dp"/>
+            android:paddingBottom="35dp"
+            android:text="Analyze Result"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
 
         <!-- Exercise 1 -->
-        <TextView
-            android:id="@+id/exercise1_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EXNAME1"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"/>
-
-        <TextView
-            android:id="@+id/exercise1_reps"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="repsSets"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="16dp"/>
-
-        <Button
-            android:id="@+id/exercise1_video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Watch Video"
-            android:backgroundTint="#CC6600"
-            android:onClick="watchExercise1Video"
-            android:layout_marginStart="8dp"/>
 
         <!-- Exercise 2 -->
-        <TextView
-            android:id="@+id/exercise2_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EXNAME2"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginTop="35dp"
-            android:layout_marginStart="16dp" />
 
         <TextView
-            android:id="@+id/exercise2_reps"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text="repsSets"
-            android:textSize="18sp"
+            android:text="One day  full body"
             android:textColor="@color/white"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="16dp"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/exercise2_video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Watch Video"
-            android:backgroundTint="#CC6600"
-            android:onClick="watchExercise2Video"
-            android:layout_marginStart="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/exercise1_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Squats"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exercise1_reps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="15 times"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/exercise1_video"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#CC6600"
+                android:onClick="watchExercise1Video"
+                android:text="Watch Video" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/exercise2_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Run"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exercise2_reps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="20 min"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/exercise2_video"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#CC6600"
+                android:onClick="watchExercise2Video"
+                android:text="Watch Video" />
+        </LinearLayout>
 
         <!-- Exercise 3 -->
-        <TextView
-            android:id="@+id/exercise3_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EXNAME3"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginTop="35dp"
-            android:layout_marginStart="16dp" />
 
-        <Button
-            android:id="@+id/exercise3_video"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Watch Video"
-            android:backgroundTint="#CC6600"
-            android:onClick="watchExercise3Video"
-            android:layout_marginStart="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/exercise3_reps"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="repsSets"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="16dp"/>
+            <TextView
+                android:id="@+id/exercise3_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Push-ups"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exercise3_reps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="30 times"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/exercise3_video"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#CC6600"
+                android:onClick="watchExercise3Video"
+                android:text="Watch Video" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

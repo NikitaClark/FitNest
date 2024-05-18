@@ -36,9 +36,9 @@ public class DashBoard extends AppCompatActivity {
 
 
         MediaController mediaController = new MediaController(this);
-       mediaController.setAnchorView(videoView);
-       videoView.setMediaController(mediaController);
-       videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.logo);
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
+        videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.logo);
         // Start playing the video
         videoView.start();
         // Loop the video
