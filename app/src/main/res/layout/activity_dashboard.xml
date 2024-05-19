@@ -253,9 +253,9 @@
         android:id="@+id/settings_button"
         android:layout_width="0dp"
         android:layout_height="47dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/buttondesign"
         android:backgroundTint="#303030"
+        android:onClick="onSettingsButtonClick"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -265,8 +265,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
             android:src="@drawable/ic_setting" />
 
         <TextView
@@ -295,7 +295,7 @@
         app:layout_constraintStart_toEndOf="@id/nutrition_button" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bell_button"
         android:layout_width="54dp"
         android:layout_height="38dp"
         android:layout_marginTop="16dp"

@@ -79,8 +79,8 @@ public class GainMuscle extends AppCompatActivity {
         switch (questionNumber) {
             case 1:
 
-                findViewById(R.id.emailEditText).setVisibility(View.GONE);
-                findViewById(R.id.passwordEditText).setVisibility(View.GONE);
+                findViewById(R.id.fullNameEditText).setVisibility(View.GONE);
+                findViewById(R.id.lastNameEditText).setVisibility(View.GONE);
                 findViewById(R.id.loginButton).setVisibility(View.GONE);
 
 
@@ -191,8 +191,8 @@ public class GainMuscle extends AppCompatActivity {
                 findViewById(R.id.account).setVisibility(View.VISIBLE);
 
 
-                findViewById(R.id.emailEditText).setVisibility(View.VISIBLE);
-                findViewById(R.id.passwordEditText).setVisibility(View.VISIBLE);
+                findViewById(R.id.fullNameEditText).setVisibility(View.VISIBLE);
+                findViewById(R.id.lastNameEditText).setVisibility(View.VISIBLE);
                 findViewById(R.id.loginButton).setVisibility(View.VISIBLE);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {

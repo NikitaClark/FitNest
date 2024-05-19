@@ -312,7 +312,7 @@ android:background="#000000">
             android:layout_marginTop="8dp" />
 
         <EditText
-            android:id="@+id/emailEditText"
+            android:id="@+id/fullNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email Address"
@@ -323,13 +323,13 @@ android:background="#000000">
             android:layout_marginTop="100dp" />
 
         <EditText
-            android:id="@+id/passwordEditText"
+            android:id="@+id/lastNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
             android:textColorHint="@color/white"
             android:inputType="textPassword"
-            android:layout_below="@id/emailEditText"
+            android:layout_below="@id/fullNameEditText"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_centerHorizontal="true"
@@ -342,7 +342,7 @@ android:background="#000000">
             android:text="Log In"
             android:textColor="@color/white"
 
-            android:layout_below="@id/passwordEditText"
+            android:layout_below="@id/lastNameEditText"
             android:layout_centerHorizontal="true"
             android:backgroundTint="#303030"
             android:layout_gravity="center"

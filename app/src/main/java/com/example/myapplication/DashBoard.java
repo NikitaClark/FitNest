@@ -26,6 +26,11 @@ public class DashBoard extends AppCompatActivity {
     private VideoView videoView;
     private LinearLayout workout_button;
 
+    private LinearLayout nutrition_button;
+    private LinearLayout habit_tracking_button;
+    private LinearLayout settings_button;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,5 +65,16 @@ public class DashBoard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        // Initialize settings_button
+        settings_button = findViewById(R.id.settings_button);
+        // Set click listener for settings_button
+        settings_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, Settings.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }
