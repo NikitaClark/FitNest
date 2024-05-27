@@ -29,7 +29,7 @@ public class DashBoard extends AppCompatActivity {
     private LinearLayout nutrition_button;
     private LinearLayout habit_tracking_button;
     private LinearLayout settings_button;
-
+    private LinearLayout ai_trainer_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,17 +61,40 @@ public class DashBoard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Handle the click event
-                Intent intent = new Intent(DashBoard.this, MainActivity3.class);
+                Intent intent = new Intent(DashBoard.this, Workout.class);
                 startActivity(intent);
             }
         });
-        // Initialize settings_button
         settings_button = findViewById(R.id.settings_button);
         // Set click listener for settings_button
         settings_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DashBoard.this, Settings.class);
+                startActivity(intent);
+            }
+        });
+        nutrition_button = findViewById(R.id.nutrition_button);
+        nutrition_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, Nutrition.class);
+                startActivity(intent);
+            }
+        });
+        habit_tracking_button = findViewById(R.id.habit_tracking_button);
+        habit_tracking_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, HabitTracking.class);
+                startActivity(intent);
+            }
+        });
+        ai_trainer_button = findViewById(R.id.ai_trainer_button);
+        ai_trainer_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashBoard.this, AITrainer.class);
                 startActivity(intent);
             }
         });

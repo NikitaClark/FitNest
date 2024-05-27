@@ -30,7 +30,10 @@
         <activity android:name=".GainMuscle" />
         <activity android:name=".DashBoard" />
         <activity android:name=".Settings" />
-
+        <activity android:name=".Nutrition" />
+        <activity android:name=".HabitTracking" />
+        <activity android:name=".AITrainer" />
+        <activity android:name=".Workout" />
 
 
     </application>
